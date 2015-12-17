@@ -15,10 +15,13 @@ $("#login").click(function(){
 			}
 
 		}
-		alert(login);
+		//alert(login);
 		if(login == true)
 		{
-			document.cookie="username="+username;
+			var d = new Date();
+			d.setTime(d.getTime());
+			document.cookie="username="+username + ";" ;
+			document.cookie = "date="+d.toUTCString() + ";";
 			window.location = "./index.html";
 		}
 
