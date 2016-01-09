@@ -22,7 +22,7 @@ $("#login").click(function(){
 			d.setTime(d.getTime());
 			document.cookie="username="+username + ";" ;
 			document.cookie = "date="+d.toUTCString() + ";";
-			window.location = "./index.html";
+			window.location = "./work.html";
 		}
 
 	});
